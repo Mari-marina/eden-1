@@ -1,3 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Neonderthaw&family=Nunito+Sans:wght@300;400;600;700;800&family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,400;1,500&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Neonderthaw&family=Nunito+Sans:wght@600;700;800&family=Poppins:wght@400;600&family=Roboto:wght@300;400;500;700;900&display=swap');
+@font-face {
+	font-family: nunito;
+	font-display: swap;
+	src: url("../fonts/nunito-sans-bold.woff2") format("woff2"), url("../fonts/nunito-sans-bold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: nunito;
+	font-display: swap;
+	src: url("../fonts/nunito-sans-black.woff2") format("woff2"), url("../fonts/nunito-sans-black.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: nunito;
+	font-display: swap;
+	src: url("../fonts/nunito-sans-extrabold.woff2") format("woff2"), url("../fonts/nunito-sans-extrabold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: roboto;
+	font-display: swap;
+	src: url("../fonts/roboto-light.woff2") format("woff2"), url("../fonts/roboto-light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: nunito;
+	font-display: swap;
+	src: url("../fonts/nunito-sans-regular.woff2") format("woff2"), url("../fonts/nunito-sans-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: roboto;
+	font-display: swap;
+	src: url("../fonts/roboto-medium.woff2") format("woff2"), url("../fonts/roboto-medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: roboto;
+	font-display: swap;
+	src: url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
