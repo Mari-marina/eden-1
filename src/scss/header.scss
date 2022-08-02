@@ -194,8 +194,8 @@
 .icon-menu {
   display: block;
   position: relative;
-  width: rem(30);
-  height: rem(18);
+  width: rem(34);
+  height: rem(22);
   cursor: pointer;
   z-index: 12;
   span,
@@ -206,8 +206,8 @@
     right: 0;
     position: absolute;
     width: 100%;
-    height: rem(2);
-    background-color: #000;
+    height: rem(4);
+    background-color: #2d3074;
   }
   &::before {
     top: 0;
@@ -226,7 +226,7 @@
     &::after {
     }
     &::before {
-      top: calc(50% - rem(1));
+      top: calc(50% - rem(2));
       transform: rotate(-45deg);
     }
     &::after {
