@@ -813,6 +813,11 @@ details > summary::-webkit-details-marker {
     background: #f1a039;
     padding-left: 22px;
     position: relative;
+    border-radius: 42px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
     @media all and (max-width: 950px) {
       max-width: 360px;
       background: #272674;
@@ -947,6 +952,25 @@ input::placeholder {
   }
 }
 
+@media (max-width: 1222px) {
+  .mainn__title_orange {
+    margin: 0 !important;
+  }
+  .mainn__title_small {
+    margin: 0 !important;
+  }
+}
+
+.svh {
+  @media (max-width: $tablet) {
+    padding-bottom: 55px;
+  }
+}
+.svhh {
+  @media (max-width: $tablet) {
+    padding-bottom: 50px;
+  }
+}
 .reviews {
   &__title {
     padding: 64px 0 36px;
@@ -1069,6 +1093,10 @@ input::placeholder {
     }
   }
   &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
     @include text(15px, 900, 20px, #ffff);
     width: 206px;
     height: 50px;
@@ -1093,6 +1121,8 @@ input::placeholder {
     }
   }
   &__title_small {
+    display: block;
+    margin-bottom: 8px;
     @include text(16px, 900, 22px, $orange);
     @media all and (max-width: 620px) {
       @include text(16px, 700, 22px, $orange);
@@ -1111,6 +1141,8 @@ input::placeholder {
     }
   }
   &__title_orange {
+    display: block;
+    margin-top: 15px;
     @include text(42px, 700, 49px, $orange);
     font-family: "Roboto";
     @media all and (max-width: 620px) {
