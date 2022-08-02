@@ -11,3 +11,14 @@ $(document).ready(function () {
     centerPadding: "40px",
   });
 });
+
+const infoBlock = document.querySelectorAll(".benefits__wrap");
+
+for (let i = 0; i < infoBlock.length; i++) {
+  infoBlock[i].addEventListener("mouseenter", function (e) {
+    infoBlock[i].classList.add("open-info");
+  });
+  infoBlock[i].addEventListener("mouseout", function (e) {
+    infoBlock[i].classList.remove("open-info");
+  });
+}
