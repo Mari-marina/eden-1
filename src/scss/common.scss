@@ -1,1 +1,17 @@
 // Заголовки, общие БЄМ блоки и проче...
+
+.main {
+  &__button {
+    border-radius: 42px;
+    color: #ffffff;
+    cursor: pointer;
+    background: #262a66;
+    font-family: $fontFamily;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}

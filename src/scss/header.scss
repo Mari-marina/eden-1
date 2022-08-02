@@ -14,32 +14,68 @@
   &__list {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 60px;
     justify-content: space-between;
   }
-  // .nav__item
-  &__item {
+  // .nav__item-wrap
+  &__item-wrap {
+    display: flex;
+    flex-direction: column;
   }
   // .nav__link
   &__link {
+    font-family: roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 0.9;
+      }
+    }
   }
   // .nav__contacts
   &__contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
   }
   // .nav__wrap-tel
   &__wrap-tel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
   // .nav__icon-tel
   &__icon-tel {
   }
   // .nav__phone
   &__phone {
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
   }
   // .nav__span
   &__span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $black;
   }
   // .nav__button
   &__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    padding: 9px 30px;
   }
   // .nav__mobile
   &__mobile {
