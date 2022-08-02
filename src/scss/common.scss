@@ -236,11 +236,7 @@
 }
 
 .slick-initialized .slick-slide {
-  display: flex;
-}
-
-.slick-initialized .slick-slide {
-  display: flex;
+  display: flex !important;
   justify-content: center;
 }
 

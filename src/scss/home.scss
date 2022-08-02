@@ -368,6 +368,11 @@ h2 {
     left: 4px;
   }
   &__btn {
+    border-radius: 42px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
     @media all and (max-width: 900px) {
       display: none;
     }
@@ -402,7 +407,7 @@ h2 {
   }
   &__form_second {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 75px;
     margin: 0 auto;
     padding-top: 32px;
@@ -555,6 +560,11 @@ h2 {
     }
   }
   &__btn {
+    border-radius: 42px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: Nunito Sans;
     width: 250px;
     height: 50px;
     background: #f1a039;
@@ -926,12 +936,11 @@ input::placeholder {
 .wave_background {
   background-image: url(@img/wave.svg);
   background-repeat: no-repeat;
-
   background-size: 100% 100%;
   background-size: 1440px 100%;
   background-position-x: center;
   @media all and (min-width: 1441px) {
-    background-size: 100% 100%;
+    background-size: 100%;
   }
   @media all and (max-width: 950px) {
     background-image: none;
@@ -944,7 +953,7 @@ input::placeholder {
   background-size: 1440px 100%;
   background-position-x: center;
   @media all and (min-width: 1441px) {
-    background-size: 100% 100%;
+    background-size: 100%;
   }
   @media all and (max-width: 950px) {
     background-image: url(@img/long-waves.svg);
@@ -1649,35 +1658,6 @@ input::placeholder {
 }
 .mobile__wrap {
   font-family: "Nunito Sans";
-}
-
-.wave_background {
-  background-image: url(@img/wave.svg);
-  background-repeat: no-repeat;
-
-  background-size: 100% 100%;
-  background-size: 1440px 100%;
-  background-position-x: center;
-  @media all and (min-width: 1441px) {
-    background-size: 100% 100%;
-  }
-  @media all and (max-width: 950px) {
-    background-image: none;
-  }
-}
-.wave__background_second {
-  background-image: url(@img/wave.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-size: 1440px 100%;
-  background-position-x: center;
-  @media all and (min-width: 1441px) {
-    background-size: 100% 100%;
-  }
-  @media all and (max-width: 950px) {
-    background-image: url(@img/long-waves.svg);
-    background-size: 100% 100%;
-  }
 }
 
 .service {
