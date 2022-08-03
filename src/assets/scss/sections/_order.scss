@@ -1,0 +1,134 @@
+@import "./../variables/_mixins";
+
+.order {
+  &__title {
+    color: #ffffff;
+    padding: 226px 0 36px;
+    @media all and (max-width: 900px) {
+      padding: 169px 0 26px;
+    }
+    @media all and (max-width: 450px) {
+      padding-bottom: 26px;
+    }
+  }
+  &__form__text {
+    color: #ffffff;
+    @include text(15px, 400, 14px, #ffffff);
+    @media all and (max-width: 950px) {
+      @include text(12px, 400, 16px, #ffffff);
+    }
+  }
+  &__input {
+    padding: 10px;
+    border: 1.5px solid #ffffff;
+    border-radius: 42px;
+    width: 296px;
+    height: 50px;
+    background: #2271c5;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 8px;
+    @media all and (max-width: 900px) {
+      max-width: 450px;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    @media all and (max-width: 450px) {
+      height: 46px;
+    }
+  }
+
+  &__btn,
+  &__btn_second {
+    width: 250px;
+    height: 50px;
+    background: #f1a039;
+    padding-left: 22px;
+    position: relative;
+    @media all and (max-width: 900px) {
+      max-width: 188px;
+      width: 100%;
+    }
+    @media all and (max-width: 450px) {
+      height: 46px;
+    }
+  }
+  &__btn_second::before,
+  &__btn::before {
+    content: "";
+    position: absolute;
+    background: url(./../images/dropOrange.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 4px;
+    @media all and (max-width: 450px) {
+      top: 3px;
+    }
+  }
+  &__btn {
+    &:hover::before {
+      background: url(./../images/dropHover1.svg) no-repeat center;
+    }
+    &:hover {
+      background: #272674;
+    }
+    @media all and (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__btn_second {
+    display: none;
+    @media all and (max-width: 900px) {
+      display: block;
+    }
+  }
+  &__wrapper {
+    @media all and (max-width: 900px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  &__form_first {
+    max-width: 916px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 36px;
+    @media all and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media all and (max-width: 450px) {
+      padding-top: 0;
+    }
+  }
+  &__form_second {
+    display: flex;
+    justify-content: center;
+    margin-right: 75px;
+    margin: 0 auto;
+    padding-top: 32px;
+    max-width: 1030px;
+    width: 100%;
+    @media all and (max-width: 900px) {
+      max-width: 450px;
+      width: 100%;
+      margin-bottom: 34px;
+    }
+    @media all and (max-width: 450px) {
+      padding-top: 4px;
+    }
+  }
+  &__radioButton {
+    margin-right: 14px;
+  }
+  &__form__text {
+    @include text(16px, 400, 22px, #ffffff);
+    @media all and (max-width: 450px) {
+      @include text(12px, 400, 16px, #ffffff);
+    }
+  }
+}

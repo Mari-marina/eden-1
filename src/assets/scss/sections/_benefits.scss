@@ -1,0 +1,151 @@
+@import "./../variables/_mixins";
+
+.benefits {
+  &__title {
+    text-align: center;
+    padding-top: 71px;
+    @include text(36px, 800, 49px, #121212);
+    @media all and (max-width: 880px) {
+      padding: 16px 0;
+    }
+    @media all and (max-width: 680px) {
+      @include text(24px, 700, 32px, #121212);
+    }
+    @media all and (min-width: 681px) {
+      text-transform: UPPERCASE;
+    }
+  }
+  &__text {
+    @include text(20px, 700, 27px, #121212);
+    text-align: center;
+    @media all and (max-width: 880px) {
+      @include text(16px, 400, 21px, #121212);
+    }
+  }
+  &__wrap {
+    background: url(./../images/benefits/1.svg) no-repeat center;
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 42px;
+    min-height: 245px;
+    height: 100%;
+    @media all and (max-width: 1020px) {
+      min-height: 100px;
+    }
+  }
+  &__button__wrap {
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background: url(./../images/Vector.svg) no-repeat center;
+      width: 40px;
+      height: 21px;
+      bottom: -30px;
+      left: 142px;
+      @media all and (max-width: 1020px) {
+        background: url(./../images/Vector-resp.svg) no-repeat center;
+      }
+    }
+    @media all and (max-width: 1200px) {
+      font-size: 24px;
+    }
+    @media all and (max-width: 1020px) {
+      margin: 25px 10px 50px;
+      font-size: 18px;
+    }
+  }
+  &__wrap_round__img {
+    max-width: 390px;
+    width: 100%;
+    position: absolute;
+    top: -82px;
+    @media all and (max-width: 1020px) {
+      position: relative;
+      top: 54px;
+    }
+  }
+  &__wrap_round {
+    position: relative;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+    grid-row-gap: 88px;
+    @media all and (max-width: 1300px) {
+      grid-gap: 15px;
+    }
+    @media all and (max-width: 1020px) {
+      justify-items: center;
+      margin-top: 0;
+    }
+  }
+  &__wrap:first-child {
+    background: url(./../images/benefits/1.svg) no-repeat center;
+    grid-area: 1/1/4/2;
+    @media all and (max-width: 1020px) {
+      grid-area: 2/1/3/4;
+    }
+  }
+  &__wrap_round {
+    grid-area: 1/2/4/3;
+    @media all and (max-width: 1020px) {
+      grid-area: 1/1/2/4;
+      position: relative;
+    }
+  }
+  &__wrap:nth-child(3) {
+    background: url(./../images/benefits/3.svg) no-repeat center;
+    grid-area: 1/3/4/4;
+    @media all and (max-width: 1020px) {
+      grid-area: 3/1/4/4;
+    }
+  }
+  &__wrap:nth-child(4) {
+    background: url(./../images/benefits/4.svg) no-repeat center;
+    grid-area: 4/1/7/2;
+    @media all and (max-width: 1020px) {
+      grid-area: 4/1/5/4;
+    }
+  }
+  &__wrap:nth-child(5) {
+    background: url(./../images/benefits/5.svg) no-repeat center;
+    grid-area: 4/2/7/3;
+    @media all and (max-width: 1020px) {
+      grid-area: 5/1/6/4;
+    }
+  }
+  &__wrap:nth-child(6) {
+    background: url(./../images/benefits/6.svg) no-repeat center;
+    grid-area: 4/3/7/4;
+    @media all and (max-width: 1020px) {
+      grid-area: 6/1/7/4;
+    }
+  }
+  &__button::before {
+    content: attr(text);
+    @include text(36px, 800, 49px, #ffffff);
+    text-align: center;
+    max-width: 322px;
+    width: 100%;
+    position: relative;
+    border-radius: 42px;
+    margin: 74px 8px;
+    background: inherit;
+    background: none;
+  }
+  &__button:hover::before {
+    content: attr(hover-text);
+    @include text(16px, 400, 22px, #ffffff);
+  }
+  &__button {
+    background: none;
+  }
+}

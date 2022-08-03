@@ -1,0 +1,66 @@
+@import './../variables/_mixins';
+
+.reviews {
+  &__title {
+    padding: 146px 0 41px;
+    color: #2D3074;
+  }
+  &__wrapper {
+    margin: 0 20px;
+    min-width: 320px;
+    width: 100%;
+    background: #55B2F3;
+    border-radius: 42px;
+    @media all and (max-width: 560px) {
+      max-width: 320px;
+    }
+  }
+  &__text_top,
+  &__text_bottom,
+  &__span {
+    color: #FFFFFF
+  }
+  &__wrap {
+    padding: 36px 30px;
+    height: 300px;
+    @media all and (max-width: 560px) {
+      padding: 26px 20px;
+    }
+  }
+  &__text_top {
+    margin-bottom: 15px;
+  }
+  &__text_bottom {
+    margin: 15px 0;
+    @media all and (max-width: 560px) {
+      @include text(11px, 600, 14px, #FFFFFF);
+    }
+  }
+  &__span {
+    @include text(10px, 400, 10px, #FFFFFF);
+  }
+  &__slider {
+    // display: flex;
+    // justify-content: space-between;
+    // height: 295px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    // max-width: 100%;
+    width: 100%;
+    // height: 277px;
+    
+  }
+}
+.slider__wrapper {
+  max-width: 100%;
+  margin: 0 80px;
+  // height: 278px;
+// height: 100%;
+@media all and (max-width: 560px) {
+  margin: 0 20px;
+}
+@media all and (max-width: 530px) {
+  margin: 0 0px;
+}
+}

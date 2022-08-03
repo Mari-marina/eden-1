@@ -1,0 +1,67 @@
+@import './../variables/_mixins';
+
+.qualities {
+  &__title {
+    color: #FFFFFF;;
+    padding: 165px 0 68px;
+    @media all and (max-width: 600px) {
+      padding: 161px 0 54px;
+    }
+  }
+  &__block {
+    max-width: 290px;
+    width: 100%;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    @media all and (max-width: 1300px) {
+      margin: 10px;
+    }
+    @media all and (max-width: 620px) {
+      margin: 0px;
+    }
+  }
+  &__wrap:not(:first-child) {
+    @media all and (max-width: 636px) {
+      padding-top: 50px;
+    }
+    
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media all and (max-width: 1300px) {
+      justify-content: space-around;
+    }
+    @media all and (max-width: 636px) {
+      padding-top: 50px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Nunito Sans';
+    @include text(24px, 700, 32px, #FFFFFF);
+    margin-top: 10px;
+    @media all and (max-width: 636px) {
+      @include text(18px, 700, 25px, #FFFFFF);
+    }
+  }
+  &__text {
+    font-family: 'Nunito Sans';
+    margin-top: 16px;
+    @include text(16px, 400, 22px, #FFFFFF);
+    @media all and (max-width: 636px) {
+      @include text(16px, 400, 22px, #FFFFFF);
+    }
+  }
+  &__wrapper {
+    margin: 0 auto;
+    padding-bottom: 120px;
+    @media all and (max-width: 640px) {
+      padding-bottom: 220px;
+    }
+  }
+}

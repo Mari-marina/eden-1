@@ -1,0 +1,107 @@
+
+
+.questions {
+  &__title {
+    padding: 113px 0 48px;
+    color: #2D3074;
+    @media all and (max-width: 600px) {
+      padding: 90px 0 21px;
+      };
+  }
+  &__details__text {
+    font-family: 'Nunito Sans';
+    @include text(16px, 400, 20px, #272E59);
+  }
+  &__img {
+    margin-right: -30px;
+    @media all and (max-width: 600px) {
+      margin-right: -15px;
+      width: 6px;
+    height: 10px;
+      };
+      @media all and (max-width: 420px) {
+        margin-right: -2px;
+        margin-left: 5px;
+        };
+  }
+  &__details__text {
+    padding: 10px 195px 25px 60px;
+    @media all and (max-width: 900px) {
+      padding: 8px 30px 10px 30px;
+        };
+        &__wrap {
+          padding: 8px 10px 10px 10px;
+            };
+  }
+  &__wrapper {
+    margin-left: 30px;
+    @media all and (max-width: 1000px) {
+      margin-left: 0;
+        }
+  }
+  &__wrap {
+    max-width: 1094px;
+    width: 100%;
+    border-bottom: solid 2px #272674;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+
+    details[open] &,
+    details > summary:focus & {
+      border-bottom: 2px solid transparent;
+    }
+  }
+  &__wrap:target {
+    border-bottom: solid 2px #F1A039;
+  }
+  &__wrap.active {
+    border: none;
+  }
+}
+
+.active_wrap {
+  border: none;
+}
+
+details > summary {
+  @include text(24px, 400, 33px, #272E59);
+  list-style-type: none;
+  font-family: 'Nunito Sans';
+  // border-bottom: solid 2px #272674;
+  margin-top: 2px;
+  padding: 10px 60px 0px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  border-radius: 20px;
+  @media all and (max-width: 600px) {
+    padding: 10px 20px;
+  @include text(16px, 400, 22px, #272E59);
+  padding: 8px 30px 10px 30px;
+    };
+    @media all and (max-width: 420px) {
+    padding: 8px 10px 10px 10px;
+      };
+}
+details[open] img {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+
+details > summary:focus {
+  outline: solid 2px #F1A039;
+
+}
+
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  

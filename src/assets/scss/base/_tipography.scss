@@ -1,0 +1,13 @@
+@import './../variables/_mixins';
+
+h2 {
+  font-family: 'Nunito Sans';
+  @include text(36px, 800, 49px, #121212);
+  text-align: center;
+  @media all and (max-width: 680px) {
+    @include text(24px, 700, 32px, #121212);
+  }
+  @media all and (min-width: 681px) {
+    TEXT-TRANSFORM: UPPERCASE;
+  }
+}

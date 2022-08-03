@@ -1,0 +1,31 @@
+
+@import './../scss/base/_normalize';
+@import './../scss/base/fonts';
+@import './../scss/base/tipography';
+
+
+@import './../scss/components/hamburger';
+@import './../scss/components/radio';
+@import './../scss/components/rating';
+@import './../scss/components/button';
+@import './../scss/variables/_mixins';
+@import './../scss/variables/_var';
+
+@import './../scss/sections/main';
+@import './../scss/sections/nav';
+@import './../scss/sections/production';
+@import './../scss/sections/benefits';
+@import './../scss/sections/discounts';
+@import './../scss/sections/request';
+@import './../scss/sections/service';
+@import './../scss/sections/reviews';
+@import './../scss/sections/partners';
+@import './../scss/sections/questions';
+@import './../scss/sections/order';
+@import './../scss/sections/qualities';
+@import './../scss/sections/certificates';
+@import './../scss/sections/footer';
+
+@import './../scss/library/_slick';
+@import './../scss/library/_slick-theme';
+@import './../scss/components/sliders';

@@ -1,0 +1,139 @@
+@import "./../variables/_mixins";
+
+body.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.mm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 42px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: Nunito Sans;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.main {
+  &__image {
+    overflow: hidden;
+    @media all and (max-width: 980px) {
+      margin-top: 60px;
+    }
+    @media all and (max-width: 880px) {
+      overflow: inherit;
+    }
+  }
+  &__img {
+    max-width: 740px;
+    width: 100%;
+    position: relative;
+    left: 112px;
+    @media all and (max-width: 980px) {
+      left: 30px;
+    }
+    @media all and (max-width: 880px) {
+      left: 0;
+      top: 33px;
+      position: inherit;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    justify-content: center;
+    @media all and (max-width: 880px) {
+      max-width: unset;
+      align-items: center;
+    }
+  }
+  &__wrapper {
+    margin-top: 60px;
+    background-image: url(./../images/bacg.svg);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    @media all and (max-width: 880px) {
+      background-image: url(./../images/backg-adaptive.svg);
+      background-size: 100% 60%;
+      background-position: bottom;
+      margin-top: -60px;
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: center;
+    @media all and (max-width: 980px) {
+      margin-top: 60px;
+    }
+    @media all and (max-width: 880px) {
+      justify-content: center;
+      flex-direction: column-reverse;
+      align-items: center;
+      display: flex;
+    }
+  }
+  &__button {
+    @include text(15px, 900, 20px, #ffff);
+    width: 206px;
+    height: 50px;
+    padding-left: 22px;
+    position: relative;
+    background: #262a66;
+    &:hover {
+      background: #f1a039;
+    }
+    @media all and (max-width: 880px) {
+      margin-bottom: 61px;
+    }
+  }
+  &__button::before {
+    content: "";
+    position: absolute;
+    background: url(./../images/drop.svg) no-repeat center;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    left: 4px;
+  }
+  &__button:hover::before {
+    background: url(./../images/dropHover2.svg) no-repeat center;
+  }
+  &__title {
+    @media all and (max-width: 880px) {
+      text-align: center;
+    }
+  }
+  &__title_small {
+    @include text(16px, 900, 22px, #f1a039);
+    @media all and (max-width: 620px) {
+      @include text(16px, 700, 22px, #f1a039);
+    }
+  }
+  &__title_big {
+    @include text(42px, 800, 57px, #2d3074);
+    @media all and (max-width: 620px) {
+      @include text(22px, 900, 30px, #2d3074);
+
+
+    }
+  }
+  &__title_small-blue {
+    @include text(24px, 800, 33px, #2d3074);
+    @media all and (max-width: 620px) {
+      @include text(22px, 900, 30px, #2d3074);
+    }
+  }
+  &__title_orange {
+    @include text(42px, 700, 49px, #f1a039);
+    font-family: "Roboto";
+    @media all and (max-width: 620px) {
+      @include text(36px, 800, 40px, #f1a039);
+    }
+  }
+}

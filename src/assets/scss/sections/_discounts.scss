@@ -1,0 +1,151 @@
+@import './../variables/_mixins';
+
+.discounts {
+  &__title {
+    margin-top: 110px;
+    text-align: center;
+    @media all and (max-width: 680px) {
+      margin-top: 51px;
+    }
+  }
+  &__wrapper{
+    max-width: 445px;
+    width: 100%;
+    border-radius: 40px;
+    @media all and (max-width: 1240px) {
+      margin: 20px 0;
+      max-width: 645px;
+    }
+    @media all and (max-width: 680px) {
+      margin: 10px 0;
+    }
+  }
+  &__wrapper:first-child {
+    background: #272963;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url(./../images/bottles.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    // background-position: left bottom;
+    background-position: 15% -18%;
+    @media all and (max-width: 1240px) {
+      background-position: -24% 8%;
+    }
+    
+  }
+  &__wrapper:nth-child(2) {
+    background: #55B2F3;
+    display: flex;
+    justify-content: center;
+    background-image: url(./../images/discounts/filter.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: 41%;
+    margin: 0 12px;
+    @media all and (max-width: 640px) {
+      background-size: 55%;
+    }
+    
+  }
+  &__wrapper:nth-child(3) {
+    background: #2271C5;
+    background-image: url(./../images/discounts/b3.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    // background-size: 90% 100%;
+    // background-position: right bottom;
+    background-position: 90% 100%;
+    @media all and (max-width: 440px) {
+   background-size: 100%;
+    }
+
+  }
+  &__wrap__subtitle,
+  &__wrap__text {
+    color: #FFFFFF;
+  }
+  &__wrap {
+    width: 100%;
+  }
+  &__wrap__text {
+    @media all and (max-width: 430px) {
+      @include text(12px, 400, 16px, #FFFFFF);
+    }
+  }
+  &__wrap_first {
+    max-width: 150px;
+    @media all and (max-width: 1240px) {
+      max-width: 250px;
+      padding: 5px;
+    }
+    @media all and (max-width: 430px) {
+      max-width: 160px;
+    }
+  }
+  &__wrap_second {
+    max-width: 220px;
+    margin-left: 82px;
+    @media all and (max-width: 1240px) {
+      max-width: 250px;
+      padding: 5px;
+    }
+    @media all and (max-width: 430px) {
+      max-width: 128px;
+    }
+  }
+  &__wrap_third {
+    max-width: 220px;
+    margin-left: 33px;
+    @media all and (max-width: 1240px) {
+      max-width: 250px;
+      padding: 5px;
+    }
+    @media all and (max-width: 430px) {
+      max-width: 128px;
+    }
+  }
+  &__wrap__subtitle {
+    padding-top: 27px;
+    @media all and (max-width: 430px) {
+      padding-top: 20px;
+    }
+  }
+  &__wrap__button {
+    width: 140px;
+    height: 40px;
+    background: #F1A039;
+    border-radius: 42px;
+    color: #FFFFFF;
+    margin-bottom: 27px;
+    @media all and (max-width: 430px) {
+      margin-bottom: 19px;
+    }
+  }
+  &__wrap__text:nth-child(3) {
+    margin: 30px 0 28px;
+    @media all and (max-width: 430px) {
+      margin: 25px 0 21px;
+    }
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 41px 0 30px;
+    @media all and (max-width: 1240px) {
+      flex-direction: column;
+      align-items: center;
+      margin: 6px 10px 30px;
+    }
+  }
+  &__text_bottom {
+    text-align: center;
+    @include text(16px, 400, 22px, #272963);
+    @media all and (max-width: 430px) {
+      @include text(12px, 400, 16px, #272963);
+      max-width: 330px;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}

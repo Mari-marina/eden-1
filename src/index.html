@@ -1,14 +1,1054 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Eden Springs" })
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>gulp project</title>
+  </head>
+
   <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-        @@include('html/_page.htm',{})
-      </main>
-      @@include('html/_footer.htm',{})
+    <main class="main" id="discounts">
+      <div class="container">
+        <header class="header">
+          <div class="header__container">
+            <header class="header" id="top">
+              <div class="header__nav nav">
+                <img class="logos" src="./assets/images/logo.svg" alt="logo" />
+                <ul class="nav__list menu">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#discounts">Новым клиентам</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#benefits">Преимущества</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#discounts">Aкции</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#questions">Вопросы</a>
+                  </li>
+                </ul>
+                <div class="nav__contacts">
+                  <div class="nav__wrap-tel">
+                    <img
+                      class="nav__icon-tel"
+                      src="./assets/images/phone.svg"
+                      alt=""
+                    />
+                    <div class="nav__item-wrap">
+                      <a href="tel:+74951518763" class="nav__phone">
+                        +7 (495) 151-87-63
+                      </a>
+                      <span class="nav__span">Пн.- Пт.: 08.00-21.00 </span
+                      ><span class="nav__span"> Сб. - Вс.: 09.00-21.00</span>
+                    </div>
+                  </div>
+                  <a href="#request" class="nav__button mm">Быстрый заказ</a>
+                </div>
+              </div>
+
+              <div class="nav__mobile">
+                <a href="#top">
+                  <img
+                    class="nav__mobile__logo"
+                    src="./assets/images/logo.svg"
+                    alt=""
+                    class="logo"
+                  />
+                </a>
+                <div class="icon-menu">
+                  <span></span>
+                </div>
+              </div>
+            </header>
+          </div>
+        </header>
+      </div>
+      <div class="main__wrapper">
+        <div class="main__block container">
+          <div class="main__wrap">
+            <h1 class="main__title">
+              <span class="main__title_small"
+                >ДОСТАВКА ВОДЫ В МОСКВЕ И ОБЛАСТИ</span
+              >
+              <br />
+              <span class="main__title_big">ДЛЯ НОВЫХ КЛИЕНТОВ:</span><br />
+              <span class="main__title_small-blue">ВОДА, ПОМПА И ДОСТАВКА</span
+              ><br />
+              <span class="main__title_orange">БЕСПЛАТНО!</span>
+            </h1>
+            <button class="main__button">ЗАКАЗАТЬ ВОДУ</button>
+          </div>
+          <div class="main__image">
+            <img class="main__img" src="./assets/images/main.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2 class="benefits__title title">Почему стоит выбрать воду Eden</h2>
+        <p class="benefits__text">
+          В основе нашего производства - качество воды и технологичность
+          процессов
+        </p>
+        <div class="benefits__wrapper">
+          <div class="benefits__wrap">
+            <div class="benefits__button__wrap">
+              <button
+                class="benefits__button"
+                text="БАЛАНС МИНЕРАЛОВ"
+                hover-text="Благодаря своему составу, в который входят полезные минералы и микроэлементы: калий, магний и кальций, вода оптимальна для ежедневного питья. "
+              ></button>
+            </div>
+          </div>
+          <div class="benefits__wrap_round">
+            <img
+              class="benefits__wrap_round__img"
+              src="./assets/images/bottle.png"
+              alt="bottle"
+            />
+          </div>
+          <div class="benefits__wrap">
+            <div class="benefits__button__wrap">
+              <button
+                class="benefits__button"
+                text="СТАБИЛЬНЫЙ СОСТАВ"
+                hover-text="Сбалансированный состав воды влияет на ее вкус - вода Eden по-настоящему освежает и ее всегда приятно пить."
+              ></button>
+            </div>
+          </div>
+          <div class="benefits__wrap">
+            <div class="benefits__button__wrap">
+              <button
+                class="benefits__button"
+                text="УДОБНАЯ ДОСТАВКА"
+                hover-text="Пить воду регулярно - важно для здоровья. Больше не нужно беспокоиться о наличии питьевой воды дома. Мы доставляем заказ на следующий день прямо до порога - удобно и просто."
+              ></button>
+            </div>
+          </div>
+          <div class="benefits__wrap">
+            <div class="benefits__button__wrap">
+              <button
+                class="benefits__button"
+                text="ПРИЯТНЫЙ ВКУС"
+                hover-text="Бонус стабильного минерального состава - неизменный вкус чая, кофе и других напитков. "
+              ></button>
+            </div>
+          </div>
+          <div class="benefits__wrap">
+            <div class="benefits__button__wrap">
+              <button
+                class="benefits__button"
+                text="ИДЕАЛЬНАЯ ПИТЬЕВАЯ ВОДА"
+                hover-text="Качество и безопасность воды
+                        Eden Springs подтверждены исследованиями в европейских лабораториях и сертификатами качества.
+                        "
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="discounts">
+      <div class="container_second">
+        <h2 class="discounts__title">Еще больше выгоды для новых клиентов</h2>
+        <div class="discounts__blocks">
+          <div class="discounts__wrapper">
+            <div class="discounts__wrap discounts__wrap_first">
+              <div class="discounts__block">
+                <h4 class="discounts__wrap__subtitle">Бесплатно</h4>
+                <p class="discounts__wrap__text">2 бутыли воды</p>
+                <p class="discounts__wrap__text">+ механическая помпа *</p>
+                <a href="#request"
+                  ><button class="discounts__wrap__button">ЗАКАЗАТЬ</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="discounts__wrapper">
+            <div class="discounts__wrap discounts__wrap_second">
+              <div class="discounts__block">
+                <h4 class="discounts__wrap__subtitle">Скидка 50%</h4>
+                <p class="discounts__wrap__text">На электропомпу</p>
+                <p class="discounts__wrap__text">
+                  Доставка и вода - бесплатно от 3-х бутылей *
+                </p>
+                <a href="#request"
+                  ><button class="discounts__wrap__button">ЗАКАЗАТЬ</button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="discounts__wrapper">
+            <div class="discounts__wrap discounts__wrap_third">
+              <div class="discounts__block">
+                <h4 class="discounts__wrap__subtitle">Скидка 50%</h4>
+                <p class="discounts__wrap__text">На аренду кулера</p>
+                <p class="discounts__wrap__text">
+                  Вода и доставка - бесплатно от 3-х бутылей *
+                </p>
+                <a href="#request"
+                  ><button class="discounts__wrap__button">ЗАКАЗАТЬ</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="discounts__text_bottom">
+          *при заказе 2-х бутылей:доставка за 80 руб. возвратный залог 350 руб/
+          бутыль при любом объеме заказа
+        </p>
+      </div>
+    </section>
+    <div class="wave_background">
+      <section class="request" id="request">
+        <div class="request__background">
+          <div class="container">
+            <h2 class="request__title">Оставьте заявку</h2>
+            <p class="request__text">Мы перезвоним вам в течение 10 минут</p>
+            <div class="request__wrapper" id="req">
+              <div class="descktop">
+                <form action="" class="request__form_first">
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Ваше имя"
+                  />
+                  <input
+                    type="tel"
+                    class="request__input"
+                    placeholder="Номер телефона"
+                  />
+                  <button class="request__btn">Заказать Воду</button>
+                </form>
+                <div action="" class="request__form_second">
+                  <label>
+                    <input type="checkbox" name="radio" />
+                    <span class="request__form__text"
+                      >Я подтверждаю свое согласие на обработку персональных
+                      данных</span
+                    >
+                  </label>
+                  <!-- <input type="radio" class="request__radioButton">
+                        <p class="request__form__text">Я подтверждаю свое согласие на обработку персональных данных
+                        </p> -->
+                </div>
+              </div>
+              <div class="mobile">
+                <div class="mobile__wrap">
+                  <botton class="mobile__BTNtext">Заказать домой</botton>
+                  <botton class="mobile__BTNtext two">Заказать в офис</botton>
+                </div>
+
+                <form action="" class="request__form-mobile active">
+                  <input type="text" class="request__input" placeholder="Имя" />
+                  <input
+                    type="tel"
+                    class="request__input"
+                    placeholder="Телефон"
+                  />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Email"
+                  />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Город"
+                  />
+                  <!-- <div action="" class="request__form_second-mobile">
+                                <input type="radio" class="request__radioButton-mobile">
+                                <p class="request__form__text-mobile">Я подтверждаю свое согласие на обработку
+                                    персональных
+                                    данных</p>
+                            </div> -->
+
+                  <label class="request__form_second-mobile">
+                    <input type="checkbox" name="checkbox" />
+                    <span class="request__form__text-mobile"
+                      >Я подтверждаю свое согласие на обработку персональных
+                      данных</span
+                    >
+                  </label>
+
+                  <button class="request__btn">Заказать Воду</button>
+                </form>
+                <form action="" class="request__form-mobile two">
+                  <input type="text" class="request__input" placeholder="ФИО" />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Компания"
+                  />
+                  <input
+                    type="tel"
+                    class="request__input"
+                    placeholder="Номер телефона"
+                  />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Почта"
+                  />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Город"
+                  />
+                  <input
+                    type="text"
+                    class="request__input"
+                    placeholder="Количество сотрудников"
+                  />
+
+                  <!-- <div action="" class="request__form_second-mobile">
+                                <input type="radio" class="request__radioButton-mobile">
+                                <p class="request__form__text-mobile">Я подтверждаю свое согласие на обработку
+                                    персональных
+                                    данных</p>
+                            </div> -->
+
+                  <label class="request__form_second-mobile">
+                    <input type="checkbox" name="checkbox" />
+                    <span class="request__form__text-mobile"
+                      >Я подтверждаю свое согласие на обработку персональных
+                      данных</span
+                    >
+                  </label>
+
+                  <button class="request__btn">Заказать Воду</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="wave_backg">
+        <section class="service">
+          <div class="container">
+            <h2 class="service__title">
+              Простой и удобный сервис заказа доставки воды
+            </h2>
+            <div class="service__wrapper">
+              <div class="service__wrap">
+                <img
+                  src="./assets/images/icon-phone.svg"
+                  alt=""
+                  class="service__img"
+                />
+                <div class="service__block">
+                  <h5 class="service__subtitle">Быстрый заказ</h5>
+                  <p class="service__text">
+                    Заказ воды через сайт или по телефону
+                  </p>
+                </div>
+              </div>
+              <div class="service__wrap">
+                <img
+                  src="./assets/images/icon-record.svg"
+                  alt=""
+                  class="service__img"
+                />
+                <div class="service__block">
+                  <h5 class="service__subtitle">Доставка воды</h5>
+                  <p class="service__text">На следующий день по Москве и МО</p>
+                </div>
+              </div>
+              <div class="service__wrap">
+                <img
+                  src="./assets/images/icon-delivery.svg"
+                  alt=""
+                  class="service__img"
+                />
+                <div class="service__block">
+                  <h5 class="service__subtitle">Удобный сервис</h5>
+                  <p class="service__text">
+                    Подъем на этаж в квартиру или офис
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+    <section class="reviews">
+      <div class="container_second">
+        <h2 class="reviews__title">Для нас важно ваше мнение о воде Eden</h2>
+        <div class="slider__wrapper">
+          <div class="reviews__slider">
+            <div class="reviews__wrapper">
+              <div class="reviews__wrap">
+                <p class="reviews__text_top">Эльвира Лазарева</p>
+                <div class="reviews__rating-result rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="reviews__text_bottom">
+                  Являемся постоянными клиентами компании на протяжении
+                  нескольких лет довольны качеством воды и сервисом! быстро,
+                  удобно и качественно! Грабову А.В. отдельное спасибо
+                </p>
+                <span class="reviews__span">08.07.2022</span>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__wrap">
+                <p class="reviews__text_top">Юрий Балыков</p>
+                <div class="reviews__rating-result rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="reviews__text_bottom">
+                  Являемся постоянными клиентами компании на протяжении
+                  нескольких лет довольны качеством воды и сервисом! быстро,
+                  удобно и качественно! Грабову А.В. отдельное спасибо
+                </p>
+                <span class="reviews__span">08.07.2022</span>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__wrap">
+                <p class="reviews__text_top">Елена Виноградова</p>
+                <div class="reviews__rating-result rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="reviews__text_bottom">
+                  С Эден Спрингс сотрудничаем около 20 лет (начинали, когда они
+                  назывались Нестле Вотер). Столько лет вместе во многом из-за
+                  сотрудников Эден - толковые, вежливые, быстрые... Сейчас к нам
+                  приезжает Зыков Александр.
+                </p>
+                <span class="reviews__span">08.07.2022</span>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__wrap">
+                <p class="reviews__text_top">Ольга Черняева</p>
+                <div class="reviews__rating-result rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="reviews__text_bottom">
+                  Являемся постоянными клиентами компании на протяжении
+                  нескольких лет довольны качеством воды и сервисом! быстро,
+                  удобно и качественно! Грабову А.В. отдельное спасибо
+                </p>
+                <span class="reviews__span">08.07.2022</span>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__wrap">
+                <p class="reviews__text_top">Дарья Волкова</p>
+                <div class="reviews__rating-result rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="reviews__text_bottom">
+                  Являюсь постоянным клиентом компании “Eden”. Вода всегда
+                  отличного качества. Очень нравится отношение сотрудников
+                  компании к клиенту, а также сервис по доставке воды. Хочется
+                  отметить водителя Шепиту Андрея - всегда пунктуален, опрятен,
+                  вежлив, аккуратен в своей работе.
+                </p>
+                <span class="reviews__span">08.07.2022</span>
+              </div>
+            </div>
+            <div class="reviews__wrapper">
+              <div class="reviews__wrap">
+                <p class="reviews__text_top">Наталья Третьякова</p>
+                <div class="reviews__rating-result rating-result">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="reviews__text_bottom">
+                  Работаем с Элен Спрингс очень давно, все хорошо, водители, сто
+                  привозят воду к нам в офис очень аккуратные и добросовестные,
+                  наш водитель А. В. Грабов; качество воды хорошее, цена,
+                  правда, высоковатая.
+                </p>
+                <span class="reviews__span">08.07.2022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <div class="container_second">
+        <h2 class="partners__title title">Нам доверяют</h2>
+
+        <div class=".slider__wrapper">
+          <div class="partners__wrap slider">
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/partners/1.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/partners/2.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/partners/3.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/partners/4.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+            <div class="partners__wrap__images">
+              <img
+                class="partners__wrap__img"
+                src="./assets/images/partners/5.svg"
+                alt=""
+                class="partners__wrap__img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions" id="questions">
+      <div class="container">
+        <h2 class="questions__title">Часто задаваемые вопросы</h2>
+        <div class="questions__wrapper">
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <div class="questions__wrap">
+                Что входит в состав воды Eden Springs?
+                <img
+                  class="questions__img"
+                  src="./assets/images/arrow.svg"
+                  alt=""
+                />
+              </div>
+            </summary>
+            <p class="questions__details__text">
+              Наша вода обладает сбалансированным составом минералов и
+              микроэлементов. Пить ее можно и нужно каждый день. Основные
+              компоненты: Гидрокарбонаты 20-150 мг/л; Хлориды 35-150 мг/л;
+              Сульфаты 0-1 мг/л; Натрий 5-50 мг/л; Кальций 10-40 мг/л; Калий
+              5-20 мг/л; Магний 2-15 мг/л.
+            </p>
+          </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <div class="questions__wrap">
+                Сколько стоит вода?
+                <img
+                  class="questions__img"
+                  src="./assets/images/arrow.svg"
+                  alt=""
+                />
+              </div>
+            </summary>
+            <p class="questions__details__text">
+              При первом заказе: вода + механическая помпа - бесплатно*.
+              Минимальный заказ - 2 бутыли. Со второго заказа: цена 1 бутыли*
+              воды (19л) - 298.80 руб/ бутыль при заказе 2-5 бутылей и 264 руб/
+              бутыль при заказе 6-10 бутылей. *За каждую бутыль взимается
+              возвратный залог в 350 руб. Стоимость доставки при заказе менее
+              3-х бутылей - 80 руб.
+            </p>
+          </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <div class="questions__wrap">
+                Как оформить заявку на доставку воды?
+                <img
+                  class="questions__img"
+                  src="./assets/images/arrow.svg"
+                  alt=""
+                />
+              </div>
+            </summary>
+            <p class="questions__details__text">
+              Заполните заявку на нашем сайте или позвоните в колл-центр по
+              номеру телефона
+              <a href="tel:+74951518763" class="questions__phone"
+                >+7 (495) 151-87-63</a
+              >, наши менеджеры проконсультируют вас и подберут наиболее
+              выгодное предложение.
+            </p>
+          </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <div class="questions__wrap">
+                Что значит возвратный залог за бутыли?
+                <img
+                  class="questions__img"
+                  src="./assets/images/arrow.svg"
+                  alt=""
+                />
+              </div>
+            </summary>
+            <p class="questions__details__text">
+              Возвратный залог - это единоразовый взнос за тару при первом
+              заказе - 350 руб. за каждую бутыль 19л. При последующей доставке
+              воды мы обмениваем пустые бутыли на полные из расчета один к
+              одному. Наши бутыли - многоразовые, разработаны из поликарбоната,
+              который, в отличие от обычного пластика, не отдает вредные
+              вещества в воду. Это важно для экологии и выгодно для клиентов.
+              Отсюда - возвратный залог. В случае отказа от повторного заказа
+              воды наш курьер приедет, заберет пустые бутыли и мы вернем ваш
+              залог за тару.
+            </p>
+          </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <div class="questions__wrap">
+                Возможно ли заказать воду в офис?
+                <img
+                  class="questions__img"
+                  src="./assets/images/arrow.svg"
+                  alt=""
+                />
+              </div>
+            </summary>
+            <p class="questions__details__text">
+              Заказать воду в офис можно в несколько простых шагов. Оформите
+              заявку на заказ через юридическое лицо и укажите количество
+              сотрудников - мы подберем оптимальный объем бутылей для вашего
+              офиса.
+            </p>
+          </details>
+          <details class="questions__details">
+            <summary class="questions__summary">
+              <div class="questions__wrap">
+                В каких случаях помпа - в подарок?
+                <img
+                  class="questions__img"
+                  src="./assets/images/arrow.svg"
+                  alt=""
+                />
+              </div>
+            </summary>
+            <p class="questions__details__text">
+              Механическая помпа в подарок - действующая акция для новых
+              клиентов Eden Springs. Предложение действует на первый заказ от
+              2-х бутылей воды.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <div class="wave__background_second">
+      <!-- <img class="wave__background_second-img" src="./assets/images/11111.png" alt=""> -->
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title title">Закажите воду в несколько кликов</h2>
+          <div class="order__wrapper">
+            <form action="" class="order__form_first">
+              <input type="text" class="order__input" placeholder="Ваше имя" />
+              <input
+                type="tel"
+                class="order__input"
+                placeholder="Номер телефона"
+              />
+              <button class="production__btn">Заказать Воду</button>
+            </form>
+            <form action="" class="order__form_second">
+              <label>
+                <input type="checkbox" name="radio" />
+                <span class="order__form__text"
+                  >Я подтверждаю свое согласие на обработку персональных
+                  данных</span
+                >
+              </label>
+            </form>
+            
+            
+          </div>
+        </div>
+      </section>
+      <section class="qualities">
+        <div class="container">
+          <div class="qualities__wrapper">
+            <h2 class="qualities__title title">
+              Eden springs - с заботой о здоровье и экологии
+            </h2>
+            <div class="qualities__blocks">
+              <div class="qualities__wrap">
+                <img
+                  src="./assets/images/microscope.svg"
+                  alt=""
+                  class="qualities__img"
+                />
+                <div class="qualities__block">
+                  <h5 class="qualities__subtitle">Эксперты лаборатории</h5>
+                  <p class="qualities__text">
+                    Эксперты лаборатории Eden ежедневно мониторят качество и
+                    состав воды
+                  </p>
+                </div>
+              </div>
+              <div class="qualities__wrap">
+                <img
+                  src="./assets/images/steps.svg"
+                  alt=""
+                  class="qualities__img"
+                />
+                <div class="qualities__block">
+                  <h5 class="qualities__subtitle">11 ступеней очистки</h5>
+                  <p class="qualities__text">
+                    И минерализации воды без химического воздействия
+                  </p>
+                </div>
+              </div>
+              <div class="qualities__wrap">
+                <img
+                  src="./assets/images/icon-bottle.svg"
+                  alt=""
+                  class="qualities__img"
+                />
+                <div class="qualities__block">
+                  <h5 class="qualities__subtitle">Бутыли из поликарбоната</h5>
+                  <p class="qualities__text">
+                    Не выделяют в воду токсичные вещества - это безопасно и
+                    экологично
+                  </p>
+                </div>
+              </div>
+              <div class="qualities__wrap">
+                <img
+                  src="./assets/images/certificate.svg"
+                  alt=""
+                  class="qualities__img"
+                />
+                <div class="qualities__block">
+                  <h5 class="qualities__subtitle">Сертификация</h5>
+                  <p class="qualities__text">
+                    Наша вода сертифицирована по международным стандартам
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="certificates">
+      <div class="container">
+        <div class="certificates__slider">
+          <div class="certificates__wrapper">
+            <div class="certificates__wrapper_left">
+              <h2 class="certificates__title">
+                МЕЖДУНАРОДНЫЙ СЕРТИФИКАТ КАЧЕСТВА ПРОДУКЦИИ FSSC 22000
+              </h2>
+              <p class="certificates__text">
+                Сертификат содержит критерии к системам менеджмента окружающей
+                среды и гарантирует условия производства с минимальным влиянием
+                на экологию.
+              </p>
+              <a
+                href="./assets/images/sert_1.png"
+                data-fancybox
+                class="certificates__btn"
+              >
+                ОТКРЫТЬ СЕРТИФИКАТ
+              </a>
+            </div>
+            <div class="certificates__wrapper_right">
+              <div class="certificates__block">
+                <div class="certificates__block__wrap">
+                  <img
+                    class="certificates__block__img"
+                    src="./assets/images/attestation1.svg"
+                    alt=""
+                  />
+                  <img
+                    class="certificates__block__img"
+                    src="./assets/images/attestation2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="certificates__wrapper">
+            <div class="certificates__wrapper_left">
+              <h2 class="certificates__title">
+                МЕЖДУНАРОДНЫЙ СЕРТИФИКАТ КАЧЕСТВА ПРОДУКЦИИ FSSC 22000
+              </h2>
+              <p class="certificates__text">
+                Сертификат содержит критерии к системам менеджмента окружающей
+                среды и гарантирует условия производства с минимальным влиянием
+                на экологию.
+              </p>
+              <a
+                href="./assets/images/sert_2.png"
+                data-fancybox
+                class="certificates__btn"
+              >
+                ОТКРЫТЬ СЕРТИФИКАТ
+              </a>
+            </div>
+            <div class="certificates__wrapper_right">
+              <div class="certificates__block">
+                <div class="certificates__block__wrap">
+                  <img
+                    class="certificates__block__img"
+                    src="./assets/images/attestation1.svg"
+                    alt=""
+                  />
+                  <img
+                    class="certificates__block__img"
+                    src="./assets/images/attestation2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="production">
+      <div class="container">
+        <h3 class="production__title title">
+          EDEN SPRINGS - международный производитель воды
+        </h3>
+        <div class="production__wrapper">
+          <div class="production__wrap">
+            <h3 class="production__subtitle_orange">35 лет</h3>
+            <p class="production__text production__text_left">
+              Производим и доставляем питьевую воду в 21 стране Европы
+            </p>
+          </div>
+          <div class="production__wrap">
+            <h3 class="production__subtitle_orange">700 млн</h3>
+            <p class="production__text production__text_center">
+              Воды добываем ежегодно из 27 источников
+            </p>
+          </div>
+          <div class="production__wrap">
+            <h3 class="production__subtitle_orange">800 тыс</h3>
+            <p class="production__text production__text_right">
+              Клиентов в офисах и домах доверяют нам
+            </p>
+          </div>
+        </div>
+        <video
+          class="production__video"
+          src="./assets/video/production.mp4"
+          poster="./assets/images/production.png"
+          autoplay
+          muted
+          controls
+        ></video>
+        <div class="production__container">
+          <h5 class="production__subtitle">
+            Запишитесь на экскурсию на фабрику Eden Springs!
+          </h5>
+          <p class="production__text_bottom">
+            Eden-открытая компания, мы гордимся своим качеством и готовы
+            показать вам весь цикл по производству идеально чистой питьевой
+            воды.
+          </p>
+          <form action="" class="production__form">
+            <input
+              type="text"
+              class="production__input"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="tel"
+              class="production__input"
+              placeholder="Номер телефона"
+            />
+            <button class="production__btn">ОСТАВИТЬ ЗАЯВКУ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__wrap">
+            <a href="#top"
+              ><img src="./assets/images/logo.svg" alt="" class="footer__logo"
+            /></a>
+            <p class="footer__text">© Eden Springs 2022г.</p>
+            <a
+              href="https://www.edensprings.ru/soglashenie-o-konfidencialnosti"
+              class="footer__link"
+              >Политика конфиденциальности</a
+            >
+          </div>
+          <div class="footer__wrap">
+            <ul class="footer__list footer__list_center">
+              <li class="footer__item">
+                <a
+                  class="footer__link"
+                  href="tel:+74951518763"
+                  class="nav__phone"
+                  >+7 (495) 023-1955</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="info@edensprings.ru"
+                  >info@edensprings.ru</a
+                >
+              </li>
+              <li class="footer__item">
+                <img
+                  class="footer__icon"
+                  src="./assets/images/icon-VK.svg"
+                  alt="VK"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrap">
+            <ul class="footer__list footer__list_right">
+              <li class="footer__item">Пн.- Пт.: 08.00-21.00</li>
+              <li class="footer__item">Сб. - Вс.: 09.00-21.00</li>
+              <li class="footer__item">МО, Домодедовский район,</li>
+              <li class="footer__item">г. Домодедово, Каширское ш., д. 19.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./../../assets/js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".reviews__slider").slick({
+          slidesToShow: 3,
+          infinite: true,
+          slidesToScroll: 3,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1008,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          slidesToShow: 4,
+          infinite: true,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                // centerMode: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 1008,
+              settings: {
+                // centerMode: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 680,
+              settings: {
+                // centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".certificates__slider").slick({
+          slidesToShow: 1,
+          infinite: true,
+          slidesToScroll: 1,
+          centerPadding: "40px",
+        });
+      });
+    </script>
   </body>
 </html>

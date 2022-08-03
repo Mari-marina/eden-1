@@ -1,0 +1,29 @@
+// .rating-result {
+// 	width: 265px;
+// 	margin: 0 auto;
+// }
+.rating-result span,
+.rating-result--white span {
+	padding: 0;
+	font-size: 32px;
+	margin: 0 2px;
+	line-height: 1;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+	@media all and (max-width: 540px) {
+		font-size: 20px;
+		}
+}
+.rating-result > span:before,
+.rating-result--white > span:before {
+	content: '★';
+}
+.rating-result > span.active {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.rating-result--white > span.active {
+	color: #FFFFFF;
+	text-shadow: 1px 1px #c60;
+}
