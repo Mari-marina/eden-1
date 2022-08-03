@@ -219,7 +219,7 @@
         </p>
       </div>
     </section>
-    <div class="wave_background">
+    <div class="wave">
       <section class="request" id="request">
         <div class="request__background">
           <div class="container">
@@ -982,13 +982,14 @@
         $(".reviews__slider").slick({
           slidesToShow: 3,
           infinite: true,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           responsive: [
             {
               breakpoint: 1200,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
+                centerMode: true,
               },
             },
             {
@@ -996,6 +997,7 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                centerMode: true,
               },
             },
           ],

@@ -1,0 +1,31 @@
+.wave {
+  background-image: url(./../images/11111.png);
+  background-repeat: no-repeat;
+  background-size: 1440px 100%;
+  background-position-x: center;
+  @media all and (min-width: 1441px) {
+    background-size: 100% 100%;
+  }
+  @media all and (max-width: 950px) {
+        background-image: none;
+      }
+}
+.wave_backg {
+    background-image: none;
+    @media all and (max-width: 950px) {
+      display: block;
+      background-image: url(./../images/blue-wave.svg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .wave__background_second {
+    background-image: url(./../images/11111.png);
+    background-repeat: no-repeat;
+    background-size: 1440px 100%;
+    background-position-x: center;
+        @media all and (max-width: 950px) {
+          background-image: url(./../images/long-waves.png);
+          background-size: 100% 100%;
+        }
+      }
