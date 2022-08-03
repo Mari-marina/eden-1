@@ -30,10 +30,22 @@ body.lock {
     }
   }
   &__img {
-    max-width: 740px;
+    max-width: 840px;
     width: 100%;
     position: relative;
-    left: 112px;
+    left: 50px;
+    @media (max-width: 1240px) {
+        left: 40px;
+    }
+    @media (max-width: 1190px) {
+        left: 45px;
+    }
+    @media (max-width: 1140px) {
+        left: 25px;
+    }
+    @media (max-width: 1100px) {
+        left: 15px;
+    }
     @media all and (max-width: 980px) {
       left: 30px;
     }
@@ -66,6 +78,24 @@ body.lock {
     }
   }
   &__block {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+     @media (max-width: 1270px) {
+      padding-left: 50px;
+    }
+    @media (max-width: 1201px) {
+      padding-left: 20px;
+    }
+    @media (max-width: 1170px) {
+      padding-left: 50px;
+    }
+    @media (max-width: 1130px) {
+      padding-left: 60px;
+    }
+    @media (max-width: 1110px) {
+      padding-left: 70px;
+    }
     display: flex;
     justify-content: center;
     @media all and (max-width: 980px) {

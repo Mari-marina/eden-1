@@ -1,5 +1,25 @@
 @import "./../variables/_mixins";
 .production {
+  &__container{
+  @media all and (max-width: 1680px) {
+    padding-left: 40px;
+  }
+   @media all and (max-width: 1291px) {
+    padding-left: 40px;
+  }
+  @media all and (max-width: 1260px) {
+    padding-left: 25px;
+  }
+  @media all and (max-width: 1240px) {
+    padding-left: 25px;
+  }
+  @media all and (max-width: 1230px) {
+    padding-left: 20px;
+  }
+  @media all and (max-width: 1220px) {
+    padding-left: 0px;
+  }
+  }
   &__video {
     max-width: 1159px;
     width: 100%;
