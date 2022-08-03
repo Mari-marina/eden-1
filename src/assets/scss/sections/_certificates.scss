@@ -39,8 +39,16 @@
     align-items: center;
     justify-content: center;
     @media all and (max-width: 1100px) {
-      margin-left: 32px;
-      margin-top: 30px;
+      margin-top: 40px;
+    }
+  }
+  &__block__img {
+    width: 240px;
+    @media (max-width: 686px) {
+      width: 192px;
+    }
+    @media (max-width: 556px) {
+      width: 130px;
     }
   }
   &__text {
@@ -48,8 +56,8 @@
     margin-bottom: 29px;
   }
   &__btn {
-    @media (max-width: 549px){
-       max-width: unset; 
+    @media (max-width: 549px) {
+      max-width: unset;
     }
     display: flex;
     justify-content: center;
@@ -66,7 +74,7 @@
     font-family: Nunito Sans;
   }
   &__wrapper_left {
-    padding: 56px 20px 54px 94px;
+    padding: 56px 20px 54px;
     @media all and (max-width: 1100px) {
       padding: 20px 20px 51px;
     }
