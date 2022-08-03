@@ -1,9 +1,7 @@
 @import "./../variables/_mixins";
 .production {
   &__container{
-  @media all and (max-width: 1680px) {
-    padding-left: 40px;
-  }
+  padding-left: 40px;
    @media all and (max-width: 1291px) {
     padding-left: 40px;
   }
@@ -122,8 +120,10 @@
     }
     width: 250px;
     height: 50px;
+    font-weight: 900;
     background: #f1a039;
     padding-left: 22px;
+    padding-top: 4px;
     position: relative;
   }
   &__btn::before {

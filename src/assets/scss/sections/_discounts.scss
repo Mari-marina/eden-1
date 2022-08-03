@@ -25,12 +25,18 @@
     display: flex;
     justify-content: flex-end;
     background-image: url(./../images/bottles.svg);
-    background-size: auto;
+    background-size: 50%;
     background-repeat: no-repeat;
     // background-position: left bottom;
-    background-position: 15% -18%;
+    background-position: 15% 7%;
     @media all and (max-width: 1240px) {
       background-position: -24% 8%;
+    }
+    @media all and (max-width: 1330px) {
+      background-size: 52%;
+    }
+    @media all and (max-width: 1300px) {
+      background-size: 54%;
     }
     
   }
@@ -41,25 +47,45 @@
     background-image: url(./../images/discounts/filter.svg);
     background-size: auto;
     background-repeat: no-repeat;
-    background-size: 41%;
+    background-size: 45%;
     margin: 0 12px;
     @media all and (max-width: 640px) {
       background-size: 55%;
+    }
+    @media all and (max-width: 1340px) {
+      background-size: 47%;
+    }
+    @media all and (max-width: 1300px) {
+      background-size: 48%;
+    }
+    @media all and (max-width: 1250px) {
+      background-size: 49%;
     }
     
   }
   &__wrapper:nth-child(3) {
     background: #2271C5;
     background-image: url(./../images/discounts/b3.svg);
-    background-size: auto;
+    background-size: 95%;
     background-repeat: no-repeat;
     // background-size: 90% 100%;
     // background-position: right bottom;
-    background-position: 90% 100%;
+    background-position: 95% 100%;
     @media all and (max-width: 440px) {
-   background-size: 100%;
+      background-size: 100%;
     }
-
+     @media all and (max-width: 640px) {
+      background-size: 55%;
+    }
+    @media all and (max-width: 1340px) {
+      background-size: 97%;
+    }
+    @media all and (max-width: 1300px) {
+      background-size: 98%;
+    }
+    @media all and (max-width: 1270px) {
+      background-size: 100%;
+    }
   }
   &__wrap__subtitle,
   &__wrap__text {

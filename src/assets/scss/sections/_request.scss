@@ -67,6 +67,8 @@
     background: #f1a039;
     padding-left: 22px;
     position: relative;
+    font-weight: 900;
+    padding-top: 4px;
     &:hover::before {
       background: url(./../images/dropHover1.svg) no-repeat center;
     }
@@ -180,7 +182,7 @@ input::placeholder {
     top: 2px;
     right: -10px;
   }
-  &__BTNtext {
+  &__BTNtext_1 {
     @include text(18px, 700, 24px, #8e98a8);
     background: inherit;
     cursor: pointer;
