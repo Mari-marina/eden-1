@@ -227,17 +227,9 @@
             <p class="request__text">Мы перезвоним вам в течение 10 минут</p>
             <div class="request__wrapper" id="req">
               <div class="descktop">
-                <form action="" class="request__form_first">
-                  <input
-                    type="text"
-                    class="request__input"
-                    placeholder="Ваше имя"
-                  />
-                  <input
-                    type="tel"
-                    class="request__input"
-                    placeholder="Номер телефона"
-                  />
+                <form class="request__form_first" action="/ajax/get_quote_form/75612" method="post" id="webform-client-form-28577" accept-charset="UTF-8">
+                  <input type="text" class="request__input" placeholder="Ваше имя" name="submitted[name]" id="edit-submitted-name--2"/>
+                  <input type="tel" class="request__input" placeholder="Номер телефона" id="edit-submitted-phone--2" name="submitted[phone]"/>
                   <button class="request__btn">Заказать Воду</button>
                 </form>
                 <div action="" class="request__form_second">
@@ -693,13 +685,9 @@
         <div class="container">
           <h2 class="order__title title">Закажите воду в несколько кликов</h2>
           <div class="order__wrapper">
-            <form action="" class="order__form_first">
-              <input type="text" class="order__input" placeholder="Ваше имя" />
-              <input
-                type="tel"
-                class="order__input"
-                placeholder="Номер телефона"
-              />
+            <form action="/ajax/get_quote_form/75612" method="post" accept-charset="UTF-8" class="order__form_first">
+              <input type="text" class="order__input" placeholder="Ваше имя" name="submitted[name]"/>
+              <input type="tel" class="order__input" placeholder="Номер телефона" name="submitted[phone]"/>
               <button class="production__btn">Заказать Воду</button>
             </form>
             <form action="" class="order__form_second">
@@ -900,17 +888,9 @@
             показать вам весь цикл по производству идеально чистой питьевой
             воды.
           </p>
-          <form action="" class="production__form">
-            <input
-              type="text"
-              class="production__input"
-              placeholder="Ваше имя"
-            />
-            <input
-              type="tel"
-              class="production__input"
-              placeholder="Номер телефона"
-            />
+          <form action="/ajax/get_quote_form/75612" method="post" accept-charset="UTF-8" class="production__form">
+            <input type="text" class="production__input" placeholder="Ваше имя" name="submitted[name]"/>
+            <input type="tel" class="production__input" placeholder="Номер телефона" name="submitted[phone]"/>
             <button class="production__btn">ОСТАВИТЬ ЗАЯВКУ</button>
           </form>
         </div>
