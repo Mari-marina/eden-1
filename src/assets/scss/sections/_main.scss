@@ -116,11 +116,10 @@ body.lock {
     }
   }
   &__title_big {
+    white-space: nowrap;
     @include text(42px, 800, 57px, #2d3074);
     @media all and (max-width: 620px) {
       @include text(22px, 900, 30px, #2d3074);
-
-
     }
   }
   &__title_small-blue {
