@@ -22,6 +22,14 @@ const form1 = document.querySelector(".request__form-mobile");
 const form2 = document.querySelector(".request__form-mobile.two");
 const formBtn = document.querySelector(".mobile__BTNtext");
 const formBtn2 = document.querySelector(".mobile__BTNtext.two");
+const navLinks = document.querySelectorAll(".nav__link");
+
+navLinks.forEach((element) => {
+  element.addEventListener("click", function (e) {
+    document.querySelector("body").classList.remove("lock");
+    document.documentElement.classList.remove("menu-open");
+  });
+});
 
 mm.addEventListener("click", function (e) {
   document.querySelector("body").classList.remove("lock");
