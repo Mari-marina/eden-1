@@ -117,8 +117,8 @@
     gap: 15px;
   }
   // .nav__icon-tel
-  &__icon-tel {
-  }
+  // &__icon-tel {
+  // }
   // .nav__phone
   &__phone {
     @include text(16px, 900, 22px, #272674);
@@ -215,9 +215,9 @@
     span {
       width: 0;
     }
-    &::before,
-    &::after {
-    }
+    // &::before,
+    // &::after {
+    // }
     &::before {
       top: calc(50% - 2px);
       transform: rotate(-45deg);

@@ -95,7 +95,7 @@
               ><br />
               <span class="main__title_orange">БЕСПЛАТНО!</span>
             </h1>
-            <button class="main__button">ЗАКАЗАТЬ ВОДУ</button>
+            <a href="#request"><button class="main__button">ЗАКАЗАТЬ ВОДУ</button></a>
           </div>
           <div class="main__image">
             <img class="main__img" src="./assets/images/main.png" alt="" />
@@ -219,7 +219,7 @@
         </p>
       </div>
     </section>
-    <div class="wave_background">
+    <div class="wave">
       <section class="request" id="request">
         <div class="request__background">
           <div class="container">
@@ -985,13 +985,14 @@
         $(".reviews__slider").slick({
           slidesToShow: 3,
           infinite: true,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           responsive: [
             {
               breakpoint: 1200,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
+                centerMode: true,
               },
             },
             {
@@ -999,6 +1000,7 @@
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
+                centerMode: true,
               },
             },
           ],

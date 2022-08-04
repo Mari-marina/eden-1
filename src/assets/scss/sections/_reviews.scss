@@ -7,12 +7,19 @@
   }
   &__wrapper {
     margin: 0 20px;
-    min-width: 320px;
+    width: 400px;
     width: 100%;
     background: #55B2F3;
     border-radius: 42px;
+    
     @media all and (max-width: 560px) {
-      max-width: 320px;
+      margin: 0 9px;
+      // min-width: 212px;
+    }
+    @media all and (max-width: 361px) {
+      // min-width: min-content;
+      
+
     }
   }
   &__text_top,
@@ -25,6 +32,7 @@
     height: 300px;
     @media all and (max-width: 560px) {
       padding: 26px 20px;
+      height: 240px;
     }
   }
   &__text_top {
