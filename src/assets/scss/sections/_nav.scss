@@ -126,6 +126,9 @@
     @media all and (max-width: 1060px) {
       @include text(14px, 900, 20px, #272674);
     }
+    @media all and (max-width: 1025px) {
+      @include text(13px, 700, 20px, #272674);
+    }
   }
   // .nav__span
   &__span {

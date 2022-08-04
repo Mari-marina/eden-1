@@ -30,7 +30,6 @@ const form1 = document.querySelector(".request__form-mobile");
 const form2 = document.querySelector(".request__form-mobile.two");
 const formBtn = document.querySelector(".mobile__BTNtext");
 const formBtn2 = document.querySelector(".mobile__BTNtext.two");
-<<<<<<< HEAD
 const navLinks = document.querySelectorAll(".nav__link");
 
 navLinks.forEach((element) => {
@@ -39,10 +38,6 @@ navLinks.forEach((element) => {
     document.documentElement.classList.remove("menu-open");
   });
 });
-=======
-// const navigation = document.querySelector(".main__wrapper");
-
->>>>>>> 33b2f3294a3c54b15c5ff415d3a346f2d72b9045
 
 mm.addEventListener("click", function (e) {
   document.querySelector("body").classList.remove("lock");
