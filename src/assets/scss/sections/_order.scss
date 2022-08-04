@@ -26,6 +26,7 @@
     @media all and (max-width: 950px) {
       @include text(12px, 400, 16px, #ffffff);
     }
+    
   }
   &__input {
     padding: 10px;
@@ -99,6 +100,21 @@
       flex-direction: column;
     }
   }
+  &__wrapper__second {
+    @media all and (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__wrapper__first { 
+    display: none;
+    @media all and (max-width: 900px) {
+      display: block;
+      margin: 24px 0;
+    }
+    @media all and (max-width: 450px) {
+      margin: 4px 0 24px;
+    }
+  }
   &__form_first {
     max-width: 916px;
     width: 100%;
@@ -111,7 +127,8 @@
       align-items: center;
     }
     @media all and (max-width: 450px) {
-      padding-top: 0;
+      padding: 0 4.5px;
+      max-width: 305px;
     }
   }
   &__form_second {
@@ -137,7 +154,7 @@
   &__form__text {
     @include text(16px, 400, 22px, #ffffff);
     @media all and (max-width: 450px) {
-      @include text(12px, 400, 16px, #ffffff);
+      @include text(12px, 300, 16px, #ffffff);
     }
   }
 }
