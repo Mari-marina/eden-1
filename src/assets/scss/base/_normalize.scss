@@ -405,15 +405,15 @@ button:hover {
   opacity: 0.9;
 }
 
-@media screen and (max-width: 667px) {
-  body {
-    overflow-x: hidden !important;
-  }
-  .container {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
-}
+// @media screen and (max-width: 667px) {
+//   body {
+//     overflow-x: hidden !important;
+//   }
+//   .container {
+//     max-width: 100% !important;
+//     overflow-x: hidden !important;
+//   }
+// }
 input {
   font-family: "Nunito Sans";
 }

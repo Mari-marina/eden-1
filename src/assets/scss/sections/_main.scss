@@ -56,20 +56,20 @@ body.lock {
     }
   }
   &__wrap {
+    justify-content: flex-start;
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    justify-content: center;
     @media all and (max-width: 880px) {
       max-width: unset;
       align-items: center;
     }
   }
   &__wrapper {
-    margin-top: 60px;
+    padding-top: 60px;
     background-image: url(./../images/bacg.svg);
     background-repeat: no-repeat;
-    background-size: 50% 100%;
+    background-size: 60% 100%;
     @media all and (max-width: 880px) {
       background-image: url(./../images/backg-adaptive.svg);
       background-size: 100% 60%;
@@ -112,6 +112,7 @@ body.lock {
     }
   }
   &__button {
+    margin-top: 10px;
     @include text(15px, 900, 20px, #ffff);
     width: 206px;
     height: 50px;
@@ -152,6 +153,9 @@ body.lock {
   &__title_big {
     white-space: nowrap;
     @include text(42px, 800, 57px, #2d3074);
+    @media all and (max-width: 1025px) {
+      @include text(36px, 800, 50px, #272674);
+    }
     @media all and (max-width: 620px) {
       @include text(22px, 900, 30px, #2d3074);
     }

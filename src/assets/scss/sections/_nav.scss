@@ -117,14 +117,17 @@
     gap: 15px;
   }
   // .nav__icon-tel
-  &__icon-tel {
-  }
+  // &__icon-tel {
+  // }
   // .nav__phone
   &__phone {
     @include text(16px, 900, 22px, #272674);
     text-decoration: none;
     @media all and (max-width: 1060px) {
       @include text(14px, 900, 20px, #272674);
+    }
+    @media all and (max-width: 1025px) {
+      @include text(13px, 700, 20px, #272674);
     }
   }
   // .nav__span
@@ -215,9 +218,9 @@
     span {
       width: 0;
     }
-    &::before,
-    &::after {
-    }
+    // &::before,
+    // &::after {
+    // }
     &::before {
       top: calc(50% - 2px);
       transform: rotate(-45deg);

@@ -131,41 +131,64 @@
 .reviews__slider .slick-prev {
     left: -66px;
     @media all and (max-width: 1236px)  {
-        left: -46px;
+        left: -49px;
         
     }
     @media all and (max-width: 556px)  {
-        top: 108%;
-    left: 38%;
+        // top: 113%;
+        top: 275px;
+    left: 33%;
+    // left: 200px
+
     }
     
 
 }
 .partners__wrap .slick-next,
 .reviews__slider .slick-next {
-    right: -28px;
-    @media all and (max-width: 1236px)  {
-        right: -17px;
+    right: -60px;
+    @media all and (max-width: 1199px)  {
+        right: -54px;
         
     }
     @media all and (max-width: 556px)  {
         
-        top: 108%;
-        right: 40%;
+        // top: 113%;
+        top: 275px;
+        right: 31%;
     }
 }
 
+// .reviews__slider .slick-next {
+//     @media all and (max-width: 556px)  {
+//         top: 275px;
+//         right: 31%;
+//     }
+// }
 
 
 .partners__wrap .slick-next {
-    @media all and (max-width: 556px) {
+    @media all and (max-width: 459px) {
         left: 57%;
     }
+    @media all and (max-width: 450px) {
+        top: 245px;
+    }
+    @media all and (max-width: 400px) {
+        top: 195px;
+    }
+ }
 
-}
+// }
 .partners__wrap .slick-prev {
-    @media all and (max-width: 556px) {
-        left: 33%;
+    @media all and (max-width: 459px) {
+        left: 27%;
+    }
+    @media all and (max-width: 450px) {
+        top: 245px;
+    }
+    @media all and (max-width: 400px) {
+        top: 195px;
     }
 
 }
@@ -196,7 +219,7 @@
    
 .certificates__slider .slick-prev {
     left: 944px;
-    top: 569px;
+    top: 505px;
     z-index: 1;
     @media all and (max-width: 1186px) {
         left: 856px;
@@ -204,27 +227,35 @@
     }
     @media all and (max-width: 1100px) {
     left: 40%;
-    top: 18%;
+    top: 23%;
     }
     @media all and (max-width: 640px) {
-        top: 6%; 
+        top: 10%; 
         }
         @media all and (max-width: 640px) {
             left: 35%;
             }
+        @media all and (max-width: 360px) {
+            left: 32%;  
+                        }         
 }
 
 .certificates__slider .slick-next {
-    right: 132px;
-    top: 569px;
+    right: 103px;
+    top: 505px;
     @media all and (max-width: 1100px) {
-        top: 18%;
+        top: 23%;
         right: 43%;
         }
         @media all and (max-width: 640px) {
-            top: 6%;
-            
+            top: 10%;
             }
+    @media all and (max-width: 640px) {
+        right: 36%;  
+                }
+    @media all and (max-width: 360px) {
+        right: 33%;  
+                }            
     
 }
 
@@ -235,3 +266,8 @@
 .slick-initialized .slick-slide {
     display: flex;
     justify-content: center;}
+
+    .slick-next .slick-arrow {
+        height: 44px;
+        width: 44px;
+    }   
