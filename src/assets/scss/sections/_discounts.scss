@@ -1,4 +1,4 @@
-@import './../variables/_mixins';
+@import "./../variables/_mixins";
 
 .discounts {
   &__title {
@@ -8,7 +8,7 @@
       margin-top: 51px;
     }
   }
-  &__wrapper{
+  &__wrapper {
     max-width: 445px;
     width: 100%;
     border-radius: 40px;
@@ -38,11 +38,33 @@
     @media all and (max-width: 1300px) {
       background-size: 54%;
     }
-    
-    
+    @media all and (max-width: 1241px) {
+      background-size: 35%;
+      background-position: -5% 7%;
+    }
+    @media all and (max-width: 680px) {
+      background-size: 40%;
+      background-position: -6% 7%;
+    }
+    @media all and (max-width: 580px) {
+      background-size: 49%;
+      background-position: -10% 7%;
+    }
+    @media all and (max-width: 490px) {
+      background-size: 49%;
+      background-position: -15% -5%;
+    }
+    @media all and (max-width: 450px) {
+      background-size: 52%;
+      background-position: -16% -10%;
+    }
+    @media all and (max-width: 380px) {
+      background-size: 56%;
+      background-position: -18% 5%;
+    }
   }
   &__wrapper:nth-child(2) {
-    background: #55B2F3;
+    background: #55b2f3;
     display: flex;
     justify-content: center;
     background-image: url(./../images/discounts/filter.svg);
@@ -61,15 +83,54 @@
     }
     @media all and (max-width: 1250px) {
       background-size: 49%;
-      margin-right: 22px;
-      justify-content: flex-end;
     }
-    
+    @media all and (max-width: 1241px) {
+      justify-content: flex-end;
+      background-size: 55%;
+      background-position: 0% 7%;
+      background-image: url(./../images/Boiler1.svg);
+    }
+    @media all and (max-width: 650px) {
+      background-size: 57%;
+      background-position: 0% 7%;
+    }
+    @media all and (max-width: 620px) {
+      background-size: 59%;
+      background-position: 0% 7%;
+    }
+    @media all and (max-width: 590px) {
+      background-size: 61%;
+      background-position: 0% 7%;
+    }
+    @media all and (max-width: 571px) {
+      background-size: 65%;
+      background-position: 0% 0%;
+    }
+    @media all and (max-width: 530px) {
+      background-size: 70%;
+      background-position: -15% 0%;
+    }
+    @media all and (max-width: 490px) {
+      background-size: 75%;
+      background-position: -8% 0%;
+    }
+    @media all and (max-width: 460px) {
+      background-size: 82%;
+      background-position: -20% -30%;
+    }
+    @media all and (max-width: 431px) {
+      background-size: 74%;
+      background-position: -20% -30%;
+    }
+    @media all and (max-width: 400px) {
+      background-size: 84%;
+      background-position: -50% 100%;
+    }
   }
   &__wrapper:nth-child(3) {
-    background: #2271C5;
+    background: #2271c5;
     background-image: url(./../images/discounts/b3.svg);
-    background-size: 100%;
+    background-size: 95%;
     background-repeat: no-repeat;
     // background-size: 90% 100%;
     // background-position: right bottom;
@@ -77,61 +138,82 @@
     @media all and (max-width: 440px) {
       background-size: 100%;
     }
-     @media all and (max-width: 640px) {
+    @media all and (max-width: 640px) {
       background-size: 55%;
     }
-    @media all and (max-width: 1340px) {
-      background-size: 97%;
+    @media all and (max-width: 1350px) {
+      background-size: 100%;
     }
     @media all and (max-width: 1300px) {
-      background-size: 98%;
+      background-size: 103%;
     }
     @media all and (max-width: 1270px) {
-      background-size: 100%;
+      background-size: 105%;
+    }
+    @media all and (max-width: 1241px) {
+      background-size: 73%;
+      background-position: 100% 100%;
+    }
+    @media all and (max-width: 630px) {
+      background-size: 78%;
+      background-position: 100% 100%;
+    }
+    @media all and (max-width: 585px) {
+      background-size: 85%;
+      background-position: 100% 100%;
+    }
+    @media all and (max-width: 551px) {
+      background-size: 93%;
+      background-position: 100% 100%;
+    }
+    @media all and (max-width: 495px) {
+      background-size: 109%;
+      background-position: 50% 100%;
+    }
+    @media all and (max-width: 420px) {
+      background-size: 103%;
+      background-position: 100% 100%;
+    }
+    @media all and (max-width: 400px) {
+      background-size: 115%;
+      background-position: 80% 100%;
+    }
+    @media all and (max-width: 365px) {
+      background-size: 120%;
+      background-position: 80% 100%;
     }
   }
   &__wrap__subtitle,
   &__wrap__text {
-    color: #FFFFFF;
-  }
-  &__wrap__subtitle {
-    @include text(28px, 900, 38px, #FFFFFF);
-    font-family: 'Nunito Sans';
-    @media all and (max-width: 620px) {
-      @include text(22px, 800, 30px, #FFFFFF);
-    }
+    color: #ffffff;
   }
   &__wrap {
     width: 100%;
   }
   &__wrap__text {
     @media all and (max-width: 430px) {
-      @include text(12px, 400, 16px, #FFFFFF);
+      @include text(12px, 400, 16px, #ffffff);
     }
   }
   &__wrap_first {
     max-width: 150px;
-    margin-right: 28px;
     @media all and (max-width: 1240px) {
       max-width: 250px;
-      padding: 10px;
-      margin-right: 10px;
+      padding: 5px;
     }
     @media all and (max-width: 430px) {
       max-width: 160px;
     }
-    
   }
   &__wrap_second {
     max-width: 220px;
     margin-left: 82px;
     @media all and (max-width: 1240px) {
-      max-width: 230px;
+      max-width: 250px;
       padding: 5px;
-      margin-right: 12px;
     }
     @media all and (max-width: 430px) {
-      max-width: 145px;
+      max-width: 128px;
     }
   }
   &__wrap_third {
@@ -143,42 +225,33 @@
     }
     @media all and (max-width: 430px) {
       max-width: 128px;
-      margin-left: 24px;
     }
   }
   &__wrap__subtitle {
     padding-top: 27px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20.5333px;
+    line-height: 28px;
     @media all and (max-width: 430px) {
       padding-top: 20px;
-    }
-    @media all and (max-width: 430px) {
-      @include text(20px, 900, 28px, #FFFFFF);
-    }
-    @media all and (max-width: 420px) {
-      padding-top: 10px;
     }
   }
   &__wrap__button {
     width: 140px;
     height: 40px;
-    background: #F1A039;
+    background: #f1a039;
     border-radius: 42px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 27px;
     @media all and (max-width: 430px) {
       margin-bottom: 19px;
     }
-    @media all and (max-width: 430px) {
-      margin-bottom: 10px;
-    }
   }
   &__wrap__text:nth-child(3) {
     margin: 30px 0 28px;
-    @media all and (max-width: 620px) {
-      margin: 27px 0 21px;
-    }
     @media all and (max-width: 430px) {
-      margin: 15px 0 15px;
+      margin: 25px 0 21px;
     }
   }
   &__blocks {
@@ -191,9 +264,36 @@
       margin: 6px 10px 30px;
     }
   }
-  &__blocks > .discounts__wrap__text {
-    @media all and (max-width: 430px) {
-      max-width: 100px;
+  &__block_1 {
+    @media all and (max-width: 1240px) {
+      width: 210px;
+    }
+    @media all and (max-width: 490px) {
+      width: 210px;
+      margin-left: 30px;
+    }
+    @media all and (max-width: 431px) {
+      width: 100%;
+      margin-left: -10px;
+    }
+  }
+  &__block_2 {
+    @media all and (max-width: 1240px) {
+      width: 210px;
+    }
+    @media all and (max-width: 490px) {
+      width: 210px;
+      margin-left: 30px;
+    }
+    @media all and (max-width: 431px) {
+      width: 155px;
+      margin-left: -38px;
+    }
+  }
+  &__block_3 {
+    width: 210px;
+    @media all and (max-width: 431px) {
+      width: 160px;
     }
   }
   &__text_bottom {
