@@ -108,7 +108,13 @@
     width: 44px;
     opacity: 1;
     display: block;
-    content: "";}
+    content: "";
+    @media all and (max-width: 450px) {
+        height: 30px;
+        width: 30px;  
+    }
+
+}
 
     .partners__wrap .slick-prev:before,
     .reviews__slider .slick-prev:before{
@@ -125,6 +131,10 @@
         -ms-transform: rotate(180deg);
         -o-transform: rotate(180deg);
         margin-right: 20px;
+        @media all and (max-width: 450px) {
+            height: 30px;
+            width: 30px;  
+        }
         
 }   
 .partners__wrap .slick-prev,
@@ -155,7 +165,7 @@
         
         // top: 113%;
         top: 275px;
-        right: 31%;
+        right: 38%;
     }
 }
 
